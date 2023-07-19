@@ -31,7 +31,7 @@ device = ('cuda' if torch.cuda.is_available() else 'cpu')
 folder_path = 'data/imbalanced/'
 
 # Get the list of CSV files in the folder
-data_files = [file for file in os.listdir(folder_path) if file.endswith('pima.csv')]
+data_files = [file for file in os.listdir(folder_path) if file.endswith('.csv')]
 
 for file in data_files:
     # Load and preprocess your tabular data from the CSV file
